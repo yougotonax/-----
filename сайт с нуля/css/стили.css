@@ -1,0 +1,75 @@
+
+.header {
+    width: 600px;
+    margin: 0 auto;                         /* вертикальный отступ */
+    }
+header:before {
+    content: '';                            /*хз чо это*/
+    display: block;                         /* хз что это*/
+    height: 40px;                           /*высота меню*/
+    width:98.5%;                            /* по ширине вроде бы*/
+    background: rgb(0, 0, 0);                    /*цвет*/
+    position:absolute;                      /*вроде как выравнивание во всю строчку*/
+    left:10px;                              /*нету отступа слева, чтоб начинался с начала строки*/
+    z-index:-1;                             /*нахождение, в данном случае на 1 слой ниже чтоб текст был поверх*/
+    border-radius: 10px;                    /*закруглённые концы и с верху и снизу*/
+    }
+
+body{
+    background: rgb(28, 242, 238) no-repeat fixed;;
+
+
+}
+ul {
+    margin:-10px;                           /*отступ сверху*/
+    padding:0px;                            /*отступ слева*/
+    height:100px;
+    }
+
+li {
+    list-style-type: none;                  /*убирает маркеры*/
+    float:left;                             /*без этого тега всё пишется в столбик, а теперь в строчку*/
+    margin-top:-4px;                        /*отступ текста сверху*/
+    margin-left:15px;                       /*отступ текста слкева*/
+    }
+    
+a {
+    text-decoration: none;                  /*убирает подчёркивание ссылки*/
+    display: block;
+    color:#38ae44;                        /*цвет ссылки*/
+    padding: 0px  60px ;                    /*отступ сверху\между словами. отступ сверху убрал, написал в line-height*/
+    text-transform: capitalize;             /*тег для того чтоб первая буква всегда была с большой буквы*/
+    line-height:50px;  
+    }
+
+
+ul li a:hover {                             /*действия при наведение на этот блок*/
+    background:rgb(250, 240, 240);        /*смена цвета пункта при наведении на него*/
+    color:aqua;
+    height:35px;  
+    width:30px;                             /*высота белого выделения*/
+    border-radius: 10px 10px 10px 10px;
+    margin: 7.5px -3px 10px 10px;
+
+}
+
+
+
+h1 { 
+    text-transform: uppercase;              /*Заглавные буквы*/
+    }
+    
+span {
+color: red;
+
+}
+b{
+    text-align:justify;
+    word-break: break-all; 
+
+}
+.text1 {
+    width:auto;
+    margin:10px;
+    height:1vh;
+}
